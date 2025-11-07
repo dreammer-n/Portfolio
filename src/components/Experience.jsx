@@ -21,6 +21,7 @@ const Stat = ({ number, title, subtitle, size = "md" }) => {
 const Experience = () => {
   return (
     <section id="experience" className="my-20 w-screen px-10">
+        <h3 className="relative special-font text-5xl px-48  text-blue-100"><b>E</b>xperience</h3>
       <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           {/* Grid that places the three stats similar to the mock */}
