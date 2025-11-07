@@ -1,6 +1,7 @@
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 import Swordman from "../assets/swordman.webp";
+
 const ImageClipBox = ({ src, clipClass, alt = "" }) => (
   <div className={clipClass}>
     <img src={src} alt={alt} />
@@ -25,7 +26,48 @@ const Contact = () => {
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
 
-          <Button title="contact me" containerClass="mt-10 cursor-pointer" />
+          {/* Contact form (Name, Email, Message) */}
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="w-full max-w-2xl mt-8 px-6"
+          >
+            <div className="grid grid-cols-1 gap-6">
+              <label className="flex flex-col text-sm text-neutral-400">
+                <span className="mb-2 text-xs text-neutral-500">Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  className="bg-transparent border-b border-neutral-700 py-2 text-blue-50 placeholder:text-neutral-600 outline-none"
+                />
+              </label>
+
+              <label className="flex flex-col text-sm text-neutral-400">
+                <span className="mb-2 text-xs text-neutral-500">Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  className="bg-transparent border-b border-neutral-700 py-2 text-blue-50 placeholder:text-neutral-600 outline-none"
+                />
+              </label>
+
+              <label className="flex flex-col text-sm text-neutral-400">
+                <span className="mb-2 text-xs text-neutral-500">Message</span>
+                <textarea
+                  name="message"
+                  rows={6}
+                  placeholder="Tell us about your project..."
+                  className="bg-transparent border-b border-neutral-700 py-2 text-blue-50 placeholder:text-neutral-600 outline-none resize-y"
+                />
+              </label>
+            </div>
+
+            {/* keep existing button below the form */}
+            <div className="mt-8 flex justify-center">
+              <Button title="contact me" containerClass="cursor-pointer" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
