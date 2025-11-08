@@ -48,7 +48,14 @@ body {
   }
 
   .floating-nav {
-    @apply bg-black rounded-lg border;
+    /* glassmorphism dark-cyan navbar */
+    background: rgba(0, 225, 255, 0.308); /* subtle dark cyan tint */
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    backdrop-filter: blur(8px) saturate(120%);
+    border-radius: 0.5rem; /* rounded-lg */
+    border: 1px solid rgba(6, 182, 212, 0.10);
+    box-shadow: 0 6px 20px rgba(2, 62, 68, 0.25);
+    color: #dffaff;
   }
 
   .absolute-center {
