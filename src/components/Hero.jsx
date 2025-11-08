@@ -17,7 +17,7 @@ const Hero = () => {
             {/* eslint-disable-next-line tailwindcss/classnames-order */}
             <div className="flex flex-col items-center justify-center gap-4 px-5 sm:px-10 text-center">
           <h1 className="special-font hero-heading mx-auto text-blue-100">
-            HI I&apos;m <b>N</b>ate
+            HI I&apos;m <b>N</b>at<span className="text-cyan-300">e</span>
           </h1>
 
           <div className="flex items-center justify-center gap-3">

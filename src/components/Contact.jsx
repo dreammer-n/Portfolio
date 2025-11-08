@@ -21,6 +21,9 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col items-center text-center">
+          <h2 className="special-font text-3xl text-blue-50 mb-6">
+            <span className="text-cyan-300">C</span>ontact
+          </h2>
           <AnimatedTitle
             title="let&#39;s w<b>o</b>rk together "
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"

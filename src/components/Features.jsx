@@ -150,7 +150,7 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <h1 className="special-font mb-5 text-4xl text-blue-100 md:text-5xl">
-          Featured Works
+          <span className="text-cyan-300">F</span>eatured Works
         </h1>
   
       </div>
