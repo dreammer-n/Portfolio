@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import AboutImage from "../assets/about-image.jpg";
+import aboutVideo from "../assets/aboutImage.webm";
 
 import AnimatedTitle from "./AnimatedTitle";
 
@@ -48,9 +48,11 @@ const About = () => {
 
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
-          <img
-            src="about-image.jpg"
-            alt="Background"
+          <video
+            src={aboutVideo}
+            muted
+            autoPlay
+            playsInline
             className="absolute left-0 top-0 size-full object-cover"
           />
         </div>
